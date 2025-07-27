@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magangdulu</title>
+
+    <!--:. favicon .:-->
+    <link rel="favicon icon" href="assets/Logo.png" />
+
+    <!--:. css boostrap .:-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map" />
+
+    <!--:. font face .:-->
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+
+    <!--:. css Costum .:-->
+    <link rel="stylesheet" href="css/boostrap-costum.css" />
+    <link rel="stylesheet" href="css/jos.css" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- :. jquery Script .:-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body class="bg-primary color-black">
+
+    <header class="navbar-home flex navbar-fixed-top space-around bg-white">
+      <div class="logo pt-15">
+        <a href="home.html" class="jos color-primary flex gap-5">
+          <img src="assets/Logo.png" alt="logo" width="35" height="35" />
+          <p class="color-primary">Magangdulu</p>
+        </a>
+      </div>
+      <nav class="w-50 flex space-around navbar-nav">
+          <a href="home.html"><span class="nav-name">Tentang</span></a>
+          <a href="companies.html"><span class="nav-name">Telusuri</span></a>
+          <a href="form-register.html"><span class="nav-name">Pendaftaran</span></a>
+          <a href="profil.html"><span class="nav-name">Profil</span></a>
+      </nav>
+      <div class="pt-15">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <section class="hero bg-darkBlue">
+        <div class="m-h-30 flex space-between container lg:column">
+          <h3 class="pt-50 text-center color-white">
+            Start your Internship Journey, and<br />
+            <span class="color-lightYellow"
+              >Build your Experience with <br />
+              us!</span
+            >
+          </h3>
+          <div class="image-hero">
+            <img src="assets/asset-pweb/monitoring.png" alt="hero" width="300px" />
+          </div>
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section class="about-section">
+        <div class="shape shape-circle-blue"></div>
+        <div class="shape shape-circle-yellow"></div>
+        <div class="shape shape-bar-1"></div>
+        <div class="shape shape-bar-2"></div>
+  
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 about-content">
+              <h1>Tentang Kami!</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nobis, sunt perspiciatis qui ducimus ratione quae illo fugiat, sed dolorum nisi pariatur voluptatum ipsa voluptatibus soluta tempora commodi? Repellendus,
+                provident!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nobis, sunt perspiciatis qui ducimus ratione quae illo fugiat, sed dolorum nisi pariatur voluptatum ipsa voluptatibus soluta tempora commodi? Repellendus,
+                provident!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- Modal start -->
+        <div class="modal fade mt-50" id="internshipModal" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="tab-content">
+              <!-- login section -->
+              <div class="login-section tab-pane active" id="login">
+                <div class="form-wrap center-block bg-primary color-primary">
+                  <h3 class="text-center form-group">Login</h3>
+                  <form>
+                    <div class="form-group">
+                      <label for="email">Email*</label>
+                      <input type="email" class="form-login" id="email" placeholder="Enter email" />
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password*</label>
+                      <input type="password" class="form-login" id="pwd" placeholder="Enter password" />
+                    </div>
+                    <div class="option checkbox">
+                      <label><input type="checkbox" /> Remember me</label>
+                      <a href="#">forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit</button>
+                    <div class="text-center form-group nav-tabs" role="tablist">
+                      <h5>don't have any account? <a href="#register" aria-controls="register" role="tab" data-toggle="tab">register</a></h5>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- register section -->
+              <div class="login-section tab-pane" id="register">
+                <div class="form-wrap center-block bg-primary color-primary">
+                  <h3 class="text-center form-group">Sign-up</h3>
+                  <form>
+                    <div class="form-group">
+                      <label for="email">Username*</label>
+                      <input type="text" class="form-login" id="email" placeholder="Username" />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email*</label>
+                      <input type="email" class="form-login" id="email" placeholder="Email" />
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Create password*</label>
+                      <input type="password" class="form-login" id="pwd" placeholder="New password" />
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Re-type password*</label>
+                      <input type="password" class="form-login" id="pwd" placeholder="Retype password" />
+                    </div>
+                    <div class="checkbox text-center">
+                      <label><input type="checkbox" /> Accept all the terms and conditions</label>
+                    </div>
+                    <a href="#login" aria-controls="login" role="tab" data-toggle="tab"><button type="submit" class="btn-submit nav-tabs" role="tablist">Submit</button></a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal end -->
+      </section>
+
+      <!-- prompt section -->
+      <section class="prompt-section">
+        <div class="container">
+          <div class="prompt-box">
+            <button href="#login" class="btn-custom-yellow active" data-toggle="modal" data-target="#internshipModal">Masuk</button>
+            <button href="#register" class="btn" data-toggle="modal" data-target="#internshipModal">Daftar</button>
+            <p>Masuk untuk mengelola Profil Anda, menyimpan pencarian, dan melihat lowongan magang yang disarankan.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- find section -->
+      <section class="find-company-section">
+        <div class="container">
+          <h2>Temukan Perusahaan magang Anda</h2>
+          <p>Jelajahi profil perusahaan untuk menemukan tempat Magang yang tepat bagi Anda. Pelajari tentang pekerjaan, ulasan, budaya perusahaan, keuntungan, dan tunjangan.</p>
+
+          <div id="company-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#company-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#company-carousel" data-slide-to="1"></li>
+                <li data-target="#company-carousel" data-slide-to="2"></li>
+                <li data-target="#company-carousel" data-slide-to="3"></li>
+                <li data-target="#company-carousel" data-slide-to="4"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                
+                <div class="item active">
+                    <div class="col-xs-12">
+                        <div class="carousel-item-placeholder flex space-between">
+                          <div class="company-card">
+                            <div class="company-logo-container">
+                              <img src="https://i.imgur.com/yB8cZ9i.png" alt="Freeport Logo" class="company-logo" />
+                            </div>
+                            <h4>PT Freeport Indonesia</h4>
+                            <div class="company-rating"><i class="glyphicon glyphicon-star overflow-y-none"></i> <b>4.7</b> &nbsp;•&nbsp; 143 Ulasan</div>
+                            <a href="#" class="btn btn-default btn-block jobs-button">16 Pekerjaan</a>
+                          </div>
+                          <div class="company-card">
+                            <div class="company-logo-container">
+                              <img src="https://i.imgur.com/yB8cZ9i.png" alt="Freeport Logo" class="company-logo" />
+                            </div>
+                            <h4>PT Freeport Indonesia</h4>
+                            <div class="company-rating"><i class="glyphicon glyphicon-star overflow-y-none"></i> <b>4.7</b> &nbsp;•&nbsp; 143 Ulasan</div>
+                            <a href="#" class="btn btn-default btn-block jobs-button">16 Pekerjaan</a>
+                          </div>
+                          <div class="company-card">
+                            <div class="company-logo-container">
+                              <img src="https://i.imgur.com/yB8cZ9i.png" alt="Freeport Logo" class="company-logo" />
+                            </div>
+                            <h4>PT Freeport Indonesia</h4>
+                            <div class="company-rating"><i class="glyphicon glyphicon-star overflow-y-none"></i> <b>4.7</b> &nbsp;•&nbsp; 143 Ulasan</div>
+                            <a href="#" class="btn btn-default btn-block jobs-button">16 Pekerjaan</a>
+                          </div>
+                          <div class="company-card">
+                            <div class="company-logo-container">
+                              <img src="https://i.imgur.com/yB8cZ9i.png" alt="Freeport Logo" class="company-logo" />
+                            </div>
+                            <h4>PT Freeport Indonesia</h4>
+                            <div class="company-rating"><i class="glyphicon glyphicon-star overflow-y-none"></i> <b>4.7</b> &nbsp;•&nbsp; 143 Ulasan</div>
+                            <a href="#" class="btn btn-default btn-block jobs-button">16 Pekerjaan</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="col-xs-12">
+                      <div class="carousel-item-placeholder flex space-between">
+                        <div class="company-card">
+                          <div class="company-logo-container">
+                            <img src="https://i.imgur.com/yB8cZ9i.png" alt="Freeport Logo" class="company-logo" />
+                          </div>
+                          <h4>PT Freeport Indonesia</h4>
+                          <div class="company-rating"><i class="glyphicon glyphicon-star overflow-y-none"></i> <b>4.7</b> &nbsp;•&nbsp; 143 Ulasan</div>
+                          <a href="#" class="btn btn-default btn-block jobs-button">16 Pekerjaan</a>
+                        </div>
+                        <div class="company-card">
+                          <div class="company-logo-container">
+                            <img src="https://i.imgur.com/yB8cZ9i.png" alt="Freeport Logo" class="company-logo" />
+                          </div>
+                          <h4>PT Freeport Indonesia</h4>
+                          <div class="company-rating"><i class="glyphicon glyphicon-star overflow-y-none"></i> <b>4.7</b> &nbsp;•&nbsp; 143 Ulasan</div>
+                          <a href="#" class="btn btn-default btn-block jobs-button">16 Pekerjaan</a>
+                        </div>
+                        <div class="company-card">
+                          <div class="company-logo-container">
+                            <img src="https://i.imgur.com/yB8cZ9i.png" alt="Freeport Logo" class="company-logo" />
+                          </div>
+                          <h4>PT Freeport Indonesia</h4>
+                          <div class="company-rating"><i class="glyphicon glyphicon-star overflow-y-none"></i> <b>4.7</b> &nbsp;•&nbsp; 143 Ulasan</div>
+                          <a href="#" class="btn btn-default btn-block jobs-button">16 Pekerjaan</a>
+                        </div>
+                        <div class="company-card">
+                          <div class="company-logo-container">
+                            <img src="https://i.imgur.com/yB8cZ9i.png" alt="Freeport Logo" class="company-logo" />
+                          </div>
+                          <h4>PT Freeport Indonesia</h4>
+                          <div class="company-rating"><i class="glyphicon glyphicon-star overflow-y-none"></i> <b>4.7</b> &nbsp;•&nbsp; 143 Ulasan</div>
+                          <a href="#" class="btn btn-default btn-block jobs-button">16 Pekerjaan</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="col-xs-12">
+                      <div class="carousel-item-placeholder flex space-between">
+                        <div class="company-card">
+                          <div class="company-logo-container">
+                            <img src="https://i.imgur.com/yB8cZ9i.png" alt="Freeport Logo" class="company-logo" />
+                          </div>
+                          <h4>PT Freeport Indonesia</h4>
+                          <div class="company-rating"><i class="glyphicon glyphicon-star overflow-y-none"></i> <b>4.7</b> &nbsp;•&nbsp; 143 Ulasan</div>
+                          <a href="#" class="btn btn-default btn-block jobs-button">16 Pekerjaan</a>
+                        </div>
+                        <div class="company-card">
+                          <div class="company-logo-container">
+                            <img src="https://i.imgur.com/yB8cZ9i.png" alt="Freeport Logo" class="company-logo" />
+                          </div>
+                          <h4>PT Freeport Indonesia</h4>
+                          <div class="company-rating"><i class="glyphicon glyphicon-star overflow-y-none"></i> <b>4.7</b> &nbsp;•&nbsp; 143 Ulasan</div>
+                          <a href="#" class="btn btn-default btn-block jobs-button">16 Pekerjaan</a>
+                        </div>
+                        <div class="company-card">
+                          <div class="company-logo-container">
+                            <img src="https://i.imgur.com/yB8cZ9i.png" alt="Freeport Logo" class="company-logo" />
+                          </div>
+                          <h4>PT Freeport Indonesia</h4>
+                          <div class="company-rating"><i class="glyphicon glyphicon-star overflow-y-none"></i> <b>4.7</b> &nbsp;•&nbsp; 143 Ulasan</div>
+                          <a href="#" class="btn btn-default btn-block jobs-button">16 Pekerjaan</a>
+                        </div>
+                        <div class="company-card">
+                          <div class="company-logo-container">
+                            <img src="https://i.imgur.com/yB8cZ9i.png" alt="Freeport Logo" class="company-logo" />
+                          </div>
+                          <h4>PT Freeport Indonesia</h4>
+                          <div class="company-rating"><i class="glyphicon glyphicon-star overflow-y-none"></i> <b>4.7</b> &nbsp;•&nbsp; 143 Ulasan</div>
+                          <a href="#" class="btn btn-default btn-block jobs-button">16 Pekerjaan</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="left carousel-control" href="#company-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left overflow-y-none" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#company-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right overflow-y-none" aria-hidden="true"></span>
+                <span class="sr-only ">Next</span>
+            </a>
+          </div>
+  
+          <div class="text-center">
+            <a href="#" class="btn btn-see-more"> Lihat Selengkapnya <span class="glyphicon glyphicon-arrow-right overflow-y-none"></span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h4>Pencarian</h4>
+            <ul class="text-left">
+              <li><a href="#">Rekomendasi Magang</a></li>
+              <li><a href="#">Cari Magang</a></li>
+              <li><a href="#">Komunitas</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Tentang Kami</h4>
+            <ul class="text-left">
+              <li><a href="#">Ruang Berita</a></li>
+              <li><a href="#">Investor</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Mitra</a></li>
+              <li><a href="#">Layanan Mitra</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Kontak</h4>
+            <ul class="text-left">
+              <li><a href="#">Hubungi Kami</a></li>
+              <li><a href="#">Media Sosial</a></li>
+              <li><a href="#">Tempat Layanan</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3"></div>
+        </div>
+        <div class="footer-bottom">
+          <a href="#">Persyaratan & Ketentuan</a> |
+          <a href="#">Keamanan & Privasi</a>
+          <span>Hak Cipta © 2025 Magang Dulu</span>
+        </div>
+      </div>
+    </footer>
+
+    <!--:.script .:-->
+    <script src="js/costum.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/jos.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/npm.js"></script>
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

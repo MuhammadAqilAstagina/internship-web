@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magangdulu</title>
+
+    <!--:. favicon .:-->
+    <link rel="favicon icon" href="assets/Logo.png" />
+
+    <!--:. css boostrap .:-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map" />
+
+    <!--:. font face .:-->
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--:. css Costum .:-->
+    <link rel="stylesheet" href="css/boostrap-costum.css" />
+    <link rel="stylesheet" href="css/jos.css" />
+
+    <!-- :. jquery Script .:-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="navbar-home flex navbar-fixed-top space-around bg-white">
+      <div class="logo pt-15">
+        <a href="home.html" class="jos color-primary flex gap-5">
+          <img src="assets/Logo.png" alt="logo" width="35" height="35" />
+          <p class="color-primary">Magangdulu</p>
+        </a>
+      </div>
+      <nav class="w-50 flex space-around navbar-nav">
+        <a href="home.html"><span class="nav-name">Tentang</span></a>
+        <a href="companies.html"><span class="nav-name">Telusuri</span></a>
+        <a href="form-register.html"><span class="nav-name">Pendaftaran</span></a>
+        <a href="profil.html"><span class="nav-name">Profil</span></a>
+      </nav>
+      <div class="pt-15">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </header>
+
+    <div class="container-fluid mt-50">
+      <div class="page-header-container">
+        <a href="profil.html" class="back-arrow-container">
+          <span class="glyphicon glyphicon-arrow-left"></span>
+        </a>
+        <h3 class="page-header-title">Log Book Kegiatan</h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="logbook-card">
+            <div class="logbook-avatar-placeholder"></div>
+
+            <form class="logbook-form">
+              <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="judulKegiatan">Judul Kegiatan</label>
+                    <input type="text" class="form-control" id="judulKegiatan" placeholder="" />
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="tanggalKegiatan">Tanggal Kegiatan</label>
+                    <input type="text" class="form-control" id="tanggalKegiatan" placeholder="dd/mm/yy" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="unggahFile">Berkas Log Book</label>
+                <div class="file-upload-row">
+                  <span class="form-control" style="background-color: #f8f8f8">Sisipkan file *.doc, .pdf, dll</span>
+                  <input type="file" id="unggahFile" style="display: none" />
+                  <button type="button" class="btn btn-upload" onclick="document.getElementById('unggahFile').click();">Unggah</button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="deskripsiKegiatan">Deskripsi Kegiatan</label>
+                <textarea class="form-control" id="deskripsiKegiatan" rows="8">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nobis, sunt perspiciatis qui ducimus ratione quae illo fugiat, sed dolorum nisi pariatur voluptatum ipsa voluptatibus soluta tempora commodi? Repellendus, provident!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nobis, sunt perspiciatis qui ducimus ratione quae illo fugiat, sed dolorum nisi pariatur voluptatum ipsa voluptatibus soluta tempora commodi? Repellendus, provident!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nobis, sunt perspiciatis qui ducimus ratione quae illo fugiat, sed dolorum nisi pariatur voluptatum ipsa voluptatibus soluta tempora commodi? Repellendus, provident!</textarea
+                >
+              </div>
+
+              <a href="report.html"><button type="submit" class="btn btn-submit-logbook">Kirim</button></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h4>Pencarian</h4>
+            <ul class="text-left">
+              <li><a href="#">Rekomendasi Magang</a></li>
+              <li><a href="#">Cari Magang</a></li>
+              <li><a href="#">Komunitas</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Tentang Kami</h4>
+            <ul class="text-left">
+              <li><a href="#">Ruang Berita</a></li>
+              <li><a href="#">Investor</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Mitra</a></li>
+              <li><a href="#">Layanan Mitra</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Kontak</h4>
+            <ul class="text-left">
+              <li><a href="#">Hubungi Kami</a></li>
+              <li><a href="#">Media Sosial</a></li>
+              <li><a href="#">Tempat Layanan</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3"></div>
+        </div>
+        <div class="footer-bottom">
+          <a href="#">Persyaratan & Ketentuan</a> |
+          <a href="#">Keamanan & Privasi</a>
+          <span>Hak Cipta © 2025 Magang Dulu</span>
+        </div>
+      </div>
+    </footer>
+
+    <!--:.script .:-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/costum.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/jos.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/npm.js"></script>
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

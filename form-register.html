@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magangdulu</title>
+
+    <!--:. favicon .:-->
+    <link rel="favicon icon" href="assets/Logo.png" />
+
+    <!--:. css boostrap .:-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map" />
+
+    <!--:. font face .:-->
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--:. css Costum .:-->
+    <link rel="stylesheet" href="css/boostrap-costum.css" />
+    <link rel="stylesheet" href="css/jos.css" />
+
+    <!-- :. jquery Script .:-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="navbar-home flex navbar-fixed-top space-around bg-white">
+      <div class="logo pt-15">
+        <a href="home.html" class="jos color-primary flex gap-5">
+          <img src="assets/Logo.png" alt="logo" width="35" height="35" />
+          <p class="color-primary">Magangdulu</p>
+        </a>
+      </div>
+      <nav class="w-50 flex space-around navbar-nav">
+        <a href="home.html"><span class="nav-name">Tentang</span></a>
+        <a href="companies.html"><span class="nav-name">Telusuri</span></a>
+        <a href="form-register.html"><span class="nav-name">Pendaftaran</span></a>
+        <a href="profil.html"><span class="nav-name">Profil</span></a>
+      </nav>
+      <div class="pt-15">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </header>
+
+    <div class="container mt-50 page-container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="company-info-sidebar">
+            <div class="company-image-placeholder"></div>
+            <h4>Perusahaan yang Dilamar</h4>
+            <p><strong>Yakult</strong></p>
+            <p class="idr-text">IDR 1JT-2JT/bln</p>
+            <p>Gedung Antam Office Park Tower</p>
+            <p>B Lt. 18 Jl. T.B. Simatupang No.1</p>
+            <p>Tanjung Barat Jakarta Selatan</p>
+            <p>12530</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-section">
+            <h3 class="mx-80 overflow-y-none">Pendaftaran Magang</h3>
+            <form>
+              <div class="form-group">
+                <label for="namaLengkap">Nama Lengkap</label>
+                <input type="text" class="form-control" id="namaLengkap" placeholder="" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="" />
+              </div>
+              <div class="form-group">
+                <label for="nim">NIM</label>
+                <input type="text" class="form-control" id="nim" placeholder="" />
+              </div>
+              <div class="form-group">
+                <label for="prodi">Prodi</label>
+                <input type="text" class="form-control" id="prodi" placeholder="" />
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="tanggalMulai">Tanggal Mulai</label>
+                    <input type="text" class="form-control" id="tanggalMulai" placeholder="dd/mm/yy" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="tanggalSelesai">Tanggal Selesai</label>
+                    <input type="text" class="form-control" id="tanggalSelesai" placeholder="dd/mm/yy" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-xs-8">
+                    <label for="berkasCV" class="file-upload-label">Berkas cv, transkrip nilai, dll</label>
+                    <input type="file" id="berkasCV" style="display: none" />
+                    <button type="button" class="btn file-upload-button" onclick="document.getElementById('berkasCV').click();">file</button>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-sm-offset-6">
+          <div class="file-upload-placeholder"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h4>Pencarian</h4>
+            <ul class="text-left">
+              <li><a href="#">Rekomendasi Magang</a></li>
+              <li><a href="#">Cari Magang</a></li>
+              <li><a href="#">Komunitas</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Tentang Kami</h4>
+            <ul class="text-left">
+              <li><a href="#">Ruang Berita</a></li>
+              <li><a href="#">Investor</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Mitra</a></li>
+              <li><a href="#">Layanan Mitra</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Kontak</h4>
+            <ul class="text-left">
+              <li><a href="#">Hubungi Kami</a></li>
+              <li><a href="#">Media Sosial</a></li>
+              <li><a href="#">Tempat Layanan</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3"></div>
+        </div>
+        <div class="footer-bottom">
+          <a href="#">Persyaratan & Ketentuan</a> |
+          <a href="#">Keamanan & Privasi</a>
+          <span>Hak Cipta © 2025 Magang Dulu</span>
+        </div>
+      </div>
+    </footer>
+
+    <!--:.script .:-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/costum.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/jos.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/npm.js"></script>
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

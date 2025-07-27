@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magangdulu</title>
+
+    <!--:. favicon .:-->
+    <link rel="favicon icon" href="assets/Logo.png" />
+
+    <!--:. css boostrap .:-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map" />
+
+    <!--:. font face .:-->
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--:. css Costum .:-->
+    <link rel="stylesheet" href="css/boostrap-costum.css" />
+    <link rel="stylesheet" href="css/jos.css" />
+
+    <!-- :. jquery Script .:-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="navbar-home flex navbar-fixed-top space-around bg-white">
+      <div class="logo pt-15">
+        <a href="home.html" class="jos color-primary flex gap-5">
+          <img src="assets/Logo.png" alt="logo" width="35" height="35" />
+          <p class="color-primary">Magangdulu</p>
+        </a>
+      </div>
+      <nav class="w-50 flex space-around navbar-nav">
+        <a href="home.html"><span class="nav-name">Tentang</span></a>
+        <a href="companies.html"><span class="nav-name">Telusuri</span></a>
+        <a href="form-register.html"><span class="nav-name">Pendaftaran</span></a>
+        <a href="profil.html"><span class="nav-name">Profil</span></a>
+      </nav>
+      <div class="pt-15">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </header>
+
+    <div class="container profile-container">
+      <div class="profile-header">
+        <h3>Profil saya</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-md-7 col-sm-12">
+          <div class="profile-card clearfix">
+            <div class="profile-avatar-placeholder"></div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group profile-info">
+                  <label for="namaLengkap">Nama Lengkap</label>
+                  <input type="text" class="form-control profile-input" id="namaLengkap" value="Muhammad Aqil Astagina" readonly />
+                </div>
+                <div class="form-group profile-info">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control profile-input" id="username" value="Asta.g" readonly />
+                </div>
+                <div class="form-group profile-info">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control profile-input" id="email" value="aqilastagina@students.amikom.ac.id" readonly />
+                </div>
+                <div class="form-group profile-info">
+                  <label for="tanggalLahir">Tanggal Lahir</label>
+                  <input type="text" class="form-control profile-input" id="tanggalLahir" value="05/07/2005" readonly />
+                </div>
+                <div class="form-group profile-info">
+                  <label for="nim">NIM</label>
+                  <input type="text" class="form-control profile-input" id="nim" value="24.01.5123" readonly />
+                </div>
+                <div class="form-group profile-info">
+                  <label for="statusMagang">Status Magang</label>
+                  <input type="text" class="form-control profile-input" id="statusMagang" value="Active" readonly />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 col-sm-12">
+          <div class="action-buttons">
+            <a href="./guidance.html"><button class="btn-action">Bimbingan</button></a>
+            <a href="./report.html"><button class="btn-action">Laporan Magang</button></a>
+            <a href="./print-certificate.html"><button class="btn-action">Cetak Sertifikat</button></a>
+            <a href="./final-score.html"><button class="btn-action">Nilai Akhir</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--:.script .:-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/costum.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/jos.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/npm.js"></script>
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

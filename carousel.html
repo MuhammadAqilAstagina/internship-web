@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Perusahaan Magang</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 40px;
+        }
+        .internship-carousel-section {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .internship-carousel-section h2 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .internship-carousel-section p {
+            color: #6c757d;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+        
+        /* Kustomisasi Carousel */
+        #company-carousel {
+            margin-bottom: 30px;
+        }
+
+        /* Placeholder untuk item di dalam carousel */
+        .carousel-item-placeholder {
+            height: 150px;
+            width: 100%;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #bdbdbd;
+            background-color: #fdfdfd;
+        }
+
+        /* Menghilangkan panah default jika hanya ingin menampilkan konten */
+        .carousel-control {
+            background-image: none !important;
+            width: 5%; /* Perkecil area klik panah */
+        }
+        
+        .carousel-control .glyphicon-chevron-left,
+        .carousel-control .glyphicon-chevron-right {
+            color: #333;
+            font-size: 30px;
+        }
+
+        /* Kustomisasi Indikator */
+        .carousel-indicators li {
+            background-color: #d6d6d6;
+            border: none;
+        }
+        .carousel-indicators .active {
+            background-color: #ffc107; /* Warna kuning seperti di gambar */
+        }
+        
+        /* Tombol "Lihat Selengkapnya" */
+        .btn-see-more {
+            background-color: #ffffff;
+            border: 2px solid #333;
+            color: #333;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 10px 20px;
+            transition: all 0.3s;
+        }
+        .btn-see-more:hover {
+            background-color: #333;
+            color: #ffffff;
+        }
+        .btn-see-more .glyphicon {
+            margin-left: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="internship-carousel-section">
+            <h2>Temukan Perusahaan magang Anda</h2>
+            <p>Jelajahi profil perusahaan untuk menemukan tempat Magang yang tepat bagi Anda. Pelajari tentang pekerjaan, ulasan, budaya perusahaan, keuntungan, dan tunjangan.</p>
+
+            <div id="company-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#company-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#company-carousel" data-slide-to="1"></li>
+                    <li data-target="#company-carousel" data-slide-to="2"></li>
+                    <li data-target="#company-carousel" data-slide-to="3"></li>
+                    <li data-target="#company-carousel" data-slide-to="4"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                    
+                    <div class="item active">
+                        <div class="col-xs-12">
+                            <div class="carousel-item-placeholder">
+                                Logo Perusahaan 1
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="col-xs-12">
+                            <div class="carousel-item-placeholder">
+                                Logo Perusahaan 2
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="col-xs-12">
+                            <div class="carousel-item-placeholder">
+                                Logo Perusahaan 3
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="col-xs-12">
+                            <div class="carousel-item-placeholder">
+                                Logo Perusahaan 4
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="col-xs-12">
+                            <div class="carousel-item-placeholder">
+                                Logo Perusahaan 5
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="left carousel-control" href="#company-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#company-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <a href="#" class="btn btn-default btn-see-more">
+                Lihat Selengkapnya <span class="glyphicon glyphicon-arrow-right"></span>
+            </a>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
